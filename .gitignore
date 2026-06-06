@@ -1,22 +1,17 @@
 # Python
 __pycache__/
 *.py[cod]
-*$py.class
-*.so
 *.egg-info/
-dist/
-build/
-.eggs/
-venv/
 .venv/
+venv/
+*.db
 
 # Node
 node_modules/
 .next/
-.next-build/
 *.tsbuildinfo
 
-# Environment files
+# Env
 .env
 .env.local
 .env.*.local
@@ -26,14 +21,16 @@ node_modules/
 .idea/
 *.swp
 *.swo
-*~
 
 # OS
 .DS_Store
 Thumbs.db
 
-# Project-specific
+# Data
+backend/data/*.db
+
 opencode.json
-frontend/plan.md
-frontend/fe_plan.md
-plan.md
+
+# Build
+dist/
+build/
