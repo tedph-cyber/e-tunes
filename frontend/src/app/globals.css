@@ -1,0 +1,41 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  body {
+    @apply bg-navy text-white antialiased font-sans;
+  }
+}
+
+@layer components {
+  .hover-glow {
+    @apply transition-shadow duration-200;
+  }
+  .hover-glow:hover {
+    box-shadow: 0 0 20px rgba(173, 198, 255, 0.15);
+  }
+
+  .card {
+    @apply bg-surface border border-surface-2 rounded p-5 hover-glow;
+  }
+
+  .btn-primary {
+    @apply bg-sonic-blue/20 text-sonic-blue border border-sonic-blue/30 
+           hover:bg-sonic-blue/30 hover:border-sonic-blue/50
+           font-semibold py-2.5 px-5 transition-all duration-200 rounded;
+  }
+
+  .btn-ghost {
+    @apply text-muted/80 hover:text-white hover:bg-white/5 font-medium 
+           py-2 px-4 transition-all duration-200 rounded;
+  }
+
+  .surface-elevation-1 {
+    @apply bg-surface border border-surface-2 rounded;
+  }
+
+  .surface-elevation-2 {
+    @apply bg-surface-2 border border-surface-2 rounded;
+  }
+}
